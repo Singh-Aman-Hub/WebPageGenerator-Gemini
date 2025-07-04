@@ -6,7 +6,7 @@ const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
 app.use(cors({
-  origin:'http://localhost:3000'
+  origin:['http://localhost:3000','https://webpagegenerator-f.onrender.com/']
 }));
 app.use(bodyParser.json());
 
