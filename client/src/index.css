@@ -1,0 +1,117 @@
+/* Overall container */
+.frontend-container {
+  min-height: 100vh;
+  min-width: 96vw;
+  background-image: url("image.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Input section styles */
+.input-section {
+  background: linear-gradient(to right, #ffecd2 0%, #ecbfb193 100%);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 1s ease;
+}
+
+.input-section h1 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.input-section p {
+  color: #636e72;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.prompt-input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: 2px solid #dfe6e9;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.prompt-input:focus {
+  border-color: #0984e3;
+  box-shadow: 0px 0px 8px #0984e3;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #6c5ce7, #0984e3);
+  transform: scale(1.05);
+}
+
+/* Generated page styles */
+.generated-page {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  min-height: 95vh;
+  min-width: 95vw;
+  position: relative;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #d63031;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #e17055;
+}
+
+.rendered-html {
+  margin-top: 60px;
+  background: #f1f2f6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  height: calc(100vh - 100px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
