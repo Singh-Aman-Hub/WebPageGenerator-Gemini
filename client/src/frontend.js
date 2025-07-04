@@ -3,12 +3,12 @@ import axios from 'axios';
 import './index.css'; // Import the CSS
 import Loading from './Loading';
 
-require('dotenv').config();
+// require('dotenv').config();
 
 
 const Frontend = () => {
   const instance = axios.create({
-    baseURL: process.env.BackendPort,
+    baseURL:  'https://webpagegenerator-gemini.onrender.com',
   });
 
   const [prompt, setPrompt] = useState('');
