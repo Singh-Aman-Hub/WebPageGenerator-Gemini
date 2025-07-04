@@ -3,10 +3,12 @@ import axios from 'axios';
 import './index.css'; // Import the CSS
 import Loading from './Loading';
 
+require('dotenv').config();
+
 
 const Frontend = () => {
   const instance = axios.create({
-    baseURL: 'http://localhost:4020',
+    baseURL: process.env.BackendPort,
   });
 
   const [prompt, setPrompt] = useState('');
