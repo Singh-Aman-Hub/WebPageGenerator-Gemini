@@ -35,7 +35,7 @@ const Frontend = () => {
     try {
       const res = await instance.post('/api', {
         query:
-          "give me the code for a webpage, do not include the html tag and head tag, give me direct html + css inline codes give the inner context of body do not include any text in the response pure codes no greeting also (no enclosing of codes in any quotes) and make it colourful Aesthetic with not much big fonts make it accessible for phones as well, the topic for the webpage is " +
+          "give me the code for a webpage, do not include the html tag and head tag, give me direct html + css inline codes give the inner context of body do not include any text in the response pure codes no greeting also (no enclosing of codes in any quotes) and make it colourful Aesthetic with not much big fonts make it accessible for phones as well but cover the whole available viewport, the topic for the webpage is " +
           prompt,
       });
       setResText(res.data);
